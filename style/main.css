@@ -5,19 +5,11 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 body {
   background: #09090a;
   color: #e5e5e5;
-}
-
-footer {
-  background: red;
 }
 
 .logo {
@@ -94,17 +86,18 @@ footer {
   height: 300px;
   width: 300px;
   pointer-events: none;
+  background: transparent;
+  border-radius: 50%;
 }
 
 .firstpage .profile {
   padding: 0.5rem;
-  background: transparent;
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  border: 10px solid #553bf1;
-  -webkit-box-shadow: 0 0 20px 0 #553bf1, inset 0 0 20px 0 #553bf1;
-          box-shadow: 0 0 20px 0 #553bf1, inset 0 0 20px 0 #553bf1;
+  border: 5px solid #553bf1;
+  -webkit-box-shadow: 0 0 30px 0 #553bf1, inset 0 0 30px 0 #553bf1;
+          box-shadow: 0 0 30px 0 #553bf1, inset 0 0 30px 0 #553bf1;
 }
 
 .arrow-down {
@@ -150,9 +143,9 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -160,7 +153,6 @@ footer {
 }
 
 .secondpage .about {
-  margin-top: 2rem;
   text-align: center;
   font-size: 24px;
   line-height: 3rem;
@@ -227,6 +219,7 @@ footer {
   text-transform: uppercase;
   font-size: 40px;
   letter-spacing: 6px;
+  position: relative;
   color: #553bf1;
 }
 
@@ -349,8 +342,8 @@ footer {
     border: 5px solid #553bf1;
   }
   .secondpage .about {
+    line-height: 2rem;
     width: 80%;
-    margin: 10rem 0 0 2rem;
     font-size: 0.8rem;
   }
   .secondpage .color {
