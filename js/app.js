@@ -1,7 +1,7 @@
 new fullpage("#fullpage", {
   //options here
   autoScrolling: true,
-  anchors: ["home", "whoiam", "skillset", "keepintouch", "copyright"],
+  anchors: ["home", "whoiam", "skillset", "works", "keepintouch", "copyright"],
   navigation: true,
   controlArrows: false,
   slidesNavigation: true,
@@ -19,4 +19,16 @@ var typed = new Typed(".anime-text", {
   showCursor: false,
   loop: true,
   bindInputFocusEvents: true,
+});
+
+light = true;
+document.body.setAttribute("data-theme", "dark");
+document.getElementById("jf_logo").addEventListener("click", function (event) {
+  if (!light) {
+    document.body.setAttribute("data-theme", "dark");
+    light = true;
+  } else {
+    document.body.removeAttribute("data-theme");
+    light = false;
+  }
 });
