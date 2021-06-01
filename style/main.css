@@ -156,7 +156,6 @@ footer {
 
 .secondpage .about {
   font-size: 24px;
-  margin: 0px;
   margin: 2rem 0 0 12rem;
   line-height: 3rem;
   letter-spacing: 3px;
@@ -267,9 +266,63 @@ footer {
   }
 }
 
-@media screen and (max-width: 1000px) {
-  body {
+@media screen and (max-width: 747px) {
+  .image {
     display: none;
+  }
+}
+
+@media screen and (max-width: 419px) {
+  .anime-text {
+    left: 4rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .logo {
+    height: 100px;
+    width: 100px;
+    margin: 1rem;
+  }
+  .arrow-down {
+    display: none;
+  }
+  .firstpage .greetings {
+    margin: 0.5rem;
+    font-size: 24px;
+    letter-spacing: 3px;
+  }
+  .firstpage .greetings div:nth-child(2) {
+    font-size: 30px;
+    margin-top: 1rem;
+    margin-left: 5rem;
+  }
+  .firstpage .greetings .anime-text {
+    position: absolute;
+    width: 100%;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    color: #553bf1;
+  }
+  .firstpage .greetings div:nth-child(3) {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+  .secondpage .title {
+    margin: 3rem 0 0 6rem;
+  }
+  .secondpage .about {
+    width: 80%;
+    margin: 2rem 0 0 5rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 614px) {
+  .secondpage .about {
+    width: 80%;
+    margin: 2rem;
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
