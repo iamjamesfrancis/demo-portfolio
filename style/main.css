@@ -160,7 +160,11 @@ footer {
   line-height: 3rem;
   letter-spacing: 3px;
   width: 80%;
-  word-break: break-all;
+}
+
+.secondpage .color {
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .thirdpage {
@@ -212,16 +216,14 @@ footer {
           justify-content: center;
   height: 100px;
   width: 100px;
-  border: 1px solid #092e20;
   background: transparent;
   border-radius: 50%;
   margin: 1rem 0;
-  -webkit-box-shadow: 0 0 10px 0 #092e20, inset 0 0 10px 0 #092e20;
-          box-shadow: 0 0 10px 0 #092e20, inset 0 0 10px 0 #092e20;
 }
 
 .skill img {
-  padding: 1rem;
+  height: 100%;
+  width: 100%;
 }
 
 .skill .progressbar {
@@ -274,7 +276,7 @@ footer {
 
 @media screen and (max-width: 419px) {
   .anime-text {
-    left: 4rem;
+    left: 3rem;
   }
 }
 
@@ -308,21 +310,65 @@ footer {
     font-size: 20px;
     margin-top: 40px;
   }
-  .secondpage .title {
-    margin: 3rem 0 0 6rem;
-  }
   .secondpage .about {
     width: 80%;
     margin: 2rem 0 0 5rem;
     font-size: 1rem;
+  }
+  .title {
+    margin: 3rem 0 0 6rem;
   }
 }
 
 @media screen and (max-width: 614px) {
   .secondpage .about {
     width: 80%;
+    margin: 10rem 0 0 2rem;
+    font-size: 0.8rem;
+  }
+  .secondpage .color {
+    font-size: 20px;
+  }
+  .thirdpage .title {
+    margin: 5rem 0 0 6rem;
+  }
+  .skill {
+    margin: 1rem;
+  }
+  .skill .icon {
+    height: 80px;
+    width: 80px;
+  }
+  .skill .progressbar {
+    width: 150px;
+  }
+  .skillset {
+    margin: 3rem 2rem 0 0;
+  }
+  .fourthpage .title {
+    margin: 5rem 0 0 6rem;
+  }
+  .fourthpage .keepintouch {
     margin: 2rem;
-    font-size: 1rem;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .fifthpage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fifthpage img {
+    height: 80px;
+    width: 80px;
+  }
+  .fifthpage div {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+  .arrow-up {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
