@@ -94,6 +94,7 @@ footer {
 .firstpage .image {
   height: 300px;
   width: 300px;
+  pointer-events: none;
 }
 
 .firstpage .profile {
@@ -342,6 +343,7 @@ footer {
             justify-content: center;
   }
   .firstpage .image {
+    pointer-events: fill;
     position: absolute;
     bottom: 1rem;
     width: 100px;

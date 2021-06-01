@@ -71,10 +71,10 @@ footer {
   .image {
     height: 300px;
     width: 300px;
+    pointer-events: none;
   }
 
   .profile {
-    // pointer-events: none;
     padding: 0.5rem;
     background: transparent;
     height: 100%;
@@ -252,6 +252,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     .image {
+      pointer-events: fill;
       position: absolute;
       bottom: 1rem;
       width: 100px;
