@@ -81,7 +81,6 @@ footer {
 
 .firstpage .greetings .anime-text {
   position: absolute;
-  width: 100%;
   font-weight: bold;
   font-family: "Raleway", sans-serif;
   color: #553bf1;
@@ -315,11 +314,7 @@ footer {
     margin-left: 5rem;
   }
   .firstpage .greetings .anime-text {
-    position: absolute;
-    width: 100%;
-    font-weight: bold;
-    font-family: "Raleway", sans-serif;
-    color: #553bf1;
+    width: 70vw;
   }
   .firstpage .greetings div:nth-child(3) {
     font-size: 20px;

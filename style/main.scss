@@ -51,7 +51,6 @@ footer {
   .greetings {
     font-size: 36px;
     letter-spacing: 6px;
-
     div:nth-child(2) {
       font-size: 48px;
       margin-top: 1rem;
@@ -59,7 +58,6 @@ footer {
     }
     .anime-text {
       position: absolute;
-      width: 100%;
       font-weight: bold;
       font-family: "Raleway", sans-serif;
       color: #553bf1;
@@ -225,12 +223,8 @@ footer {
         margin-left: 5rem;
       }
       .anime-text {
-        position: absolute;
-        width: 100%;
-        // left: 1rem;
-        font-weight: bold;
-        font-family: "Raleway", sans-serif;
-        color: #553bf1;
+        // background: lightblue;
+        width: 70vw;
       }
       div:nth-child(3) {
         font-size: 20px;
