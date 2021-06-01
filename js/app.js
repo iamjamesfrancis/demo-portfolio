@@ -32,3 +32,11 @@ document.getElementById("jf_logo").addEventListener("click", function (event) {
     light = false;
   }
 });
+
+const tl = gsap.timeline({ default: { ease: "power1.out" } });
+tl.to(".text", { y: "0%", duration: 1, stagger: 0.25 });
+tl.to(".text", { opacity: 0, duration: 1, delay: 2 }, { opacity: 1 });
+tl.to(".slider", { y: "0%", duration: 1 }, "-=.5");
+tl.to(".slider-text", { y: "0%", duration: 1 });
+tl.to(".loader", { y: "-100%", duration: 1 });
+tl.to(".slider", { y: "-100%", duration: 2 });
