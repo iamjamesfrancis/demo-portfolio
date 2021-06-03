@@ -33,6 +33,15 @@ body {
     width: 100%;
   }
 }
+
+.time {
+  font-size: 3rem;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  color: var(--primary);
+}
+
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
   background: var(--primary) !important;
