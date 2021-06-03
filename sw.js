@@ -1,6 +1,9 @@
+const currentCacheName = "static-v2";
 self.addEventListener("install", (e) => {
+  self.skipWaiting();
+
   e.waitUntil(
-    caches.open("static-v2").then((cache) => {
+    caches.open(currentCacheName).then((cache) => {
       cache.addAll([
         "./",
         "./style/main.css",
@@ -49,7 +52,7 @@ self.addEventListener("fetch", (e) => {
   );
 });
 
-const expectedCaches = ["static-v1"];
+const expectedCaches = [currentCacheName];
 
 self.addEventListener("activate", (e) => {
   e.waitUntil(

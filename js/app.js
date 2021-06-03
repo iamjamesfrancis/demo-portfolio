@@ -53,5 +53,7 @@ tl.to(".loader", { y: "-100%", duration: 0.5 });
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("sw.js").then((reg) => {
     // console.log(reg);
+    reg.update();
+    // reg.addEventListener("updatefound", () => {});
   });
 }
