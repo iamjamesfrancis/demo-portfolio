@@ -20,23 +20,38 @@ var typed = new Typed(".anime-text", {
   loop: true,
   bindInputFocusEvents: true,
 });
+localStorage.getItem("dark-mode")
+  ? null
+  : localStorage.setItem("dark-mode", "true");
 
-light = true;
-document.body.setAttribute("data-theme", "dark");
+if (localStorage.getItem("dark-mode") === "true") {
+  document.body.setAttribute("data-theme", "dark");
+} else {
+  document.body.removeAttribute("data-theme");
+}
 document.getElementById("jf_logo").addEventListener("click", function (event) {
-  if (!light) {
+  if (localStorage.getItem("dark-mode") !== "true") {
     document.body.setAttribute("data-theme", "dark");
-    light = true;
+    localStorage.setItem("dark-mode", "true");
   } else {
+    console.log("light");
     document.body.removeAttribute("data-theme");
-    light = false;
+    localStorage.setItem("dark-mode", "false");
   }
 });
 
 const tl = gsap.timeline({ default: { ease: "power1.out" } });
-tl.to(".text", { y: "0%", duration: 1, stagger: 0.25 });
-tl.to(".text", { opacity: 0, duration: 1, delay: 2 }, { opacity: 1 });
-tl.to(".slider", { y: "0%", duration: 1 }, "-=.5");
-tl.to(".slider-text", { y: "0%", duration: 1 });
-tl.to(".loader", { y: "-100%", duration: 1 });
-tl.to(".slider", { y: "-100%", duration: 2 });
+tl.to(".text", { y: "0%", duration: 1, stagger: 0.5 });
+tl.to(".text", { opacity: 0, duration: 0.5, delay: 1.5 }, { opacity: 1 });
+// tl.to(".slider", { y: "0%", duration: 0.5 }, "-=.5");
+// tl.to(".slider-text", { y: "0%", duration: 0.5 });
+tl.to(".loader", { y: "-100%", duration: 0.5 });
+// tl.to(".slider", { y: "-100%", duration: 0.5 });
+// tl.to(".slider", { opacity: 1, duration: 0.5 }, { opacity: 0 }, "-=1");
+
+// Service Worker Installation
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js").then((reg) => {
+    // console.log(reg);
+  });
+}

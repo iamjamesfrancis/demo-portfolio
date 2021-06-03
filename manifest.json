@@ -1,0 +1,10 @@
+{
+  "name": "James Francis",
+  "short_name": "James",
+  "description": "IT Student",
+  "start_url": ".",
+  "theme_color": "#553bf1",
+  "background_color": "#09090a",
+  "display": "standalone",
+  "icons": [{ "src": "logo/logo.png", "sizes": "512x512", "type": "image/png" }]
+}

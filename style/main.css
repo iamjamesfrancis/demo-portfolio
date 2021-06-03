@@ -569,7 +569,7 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  background: #09090a;
+  background: var(--background);
 }
 
 .slider {
@@ -581,7 +581,7 @@ body {
   width: 100%;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  background: #1f1f29;
+  background: var(--background);
 }
 
 .content {
@@ -641,7 +641,7 @@ body {
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  border: 10px solid #553bf1;
+  border: 10px solid var(--primary);
   -webkit-animation: shadows 1s infinite alternate ease-in-out;
           animation: shadows 1s infinite alternate ease-in-out;
 }
