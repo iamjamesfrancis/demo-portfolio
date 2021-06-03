@@ -1,4 +1,4 @@
-const currentCacheName = "static-v2";
+const currentCacheName = "static-v3";
 self.addEventListener("install", (e) => {
   self.skipWaiting();
 
@@ -6,6 +6,7 @@ self.addEventListener("install", (e) => {
     caches.open(currentCacheName).then((cache) => {
       cache.addAll([
         "./",
+        "./404.html",
         "./style/main.css",
         "./style/fullpage.min.css",
         "./js/fullpage.min.js",

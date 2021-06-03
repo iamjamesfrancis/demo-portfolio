@@ -87,8 +87,8 @@ body {
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    border: 5px solid var(--primary);
-    box-shadow: 0 0 30px 0 var(--primary), inset 0 0 30px 0 var(--primary);
+    border: 5px solid #553bf1;
+    box-shadow: 0 0 30px 0 #553bf1, inset 0 0 30px 0 #553bf1;
   }
 }
 .work-section {
@@ -332,7 +332,7 @@ body {
       height: 100px;
       .profile {
         padding: 0.3rem;
-        border: 5px solid var(--primary);
+        border: 5px solid #553bf1;
       }
     }
   }
@@ -417,8 +417,6 @@ body {
             height: 2rem;
             width: 3rem;
           }
-          .project-info {
-          }
           .project-title {
             font-size: 1rem;
           }
@@ -467,35 +465,4 @@ body {
   letter-spacing: 0.5rem;
   line-height: 5rem;
   display: inline-block;
-}
-.slider-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.slider-img {
-  margin: 2rem;
-  width: 200px;
-  height: 200px;
-  img {
-    height: 100%;
-    width: 100%;
-
-    border-radius: 50%;
-    border: 10px solid var(--primary);
-    // box-shadow: 0 0 30px 0 var(--primary), inset 0 0 30px 0 var(--primary);
-    animation: shadows 1s infinite alternate ease-in-out;
-  }
-  @keyframes shadows {
-    100% {
-      box-shadow: 0 0 30px 0 var(--primary), inset 0 0 30px 0 var(--primary);
-    }
-    50% {
-      box-shadow: 0 0 15px 0 var(--primary), inset 0 0 15px 0 var(--primary);
-    }
-    0% {
-      box-shadow: 0 0 0px 0 var(--primary), inset 0 0 0px 0 var(--primary);
-    }
-  }
 }
