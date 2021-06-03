@@ -49,10 +49,19 @@ tl.to(".loader", { y: "-100%", duration: 0.5 });
 // tl.to(".slider", { y: "-100%", duration: 0.5 });
 // tl.to(".slider", { opacity: 1, duration: 0.5 }, { opacity: 0 }, "-=1");
 
-let time = new Date();
-document.getElementById("time").innerText = `${("00" + time.getHours()).slice(
-  -2
-)}:${("00" + time.getMinutes()).slice(-2)}`;
+function currentTime() {
+  let time = new Date();
+  document.getElementById("time").innerHTML = `${("00" + time.getHours()).slice(
+    -2
+  )}:${("00" + time.getMinutes()).slice(-2)}<span style="font-size:1.2rem">:${(
+    "00" + time.getSeconds()
+  ).slice(-2)}</span>`;
+}
+setInterval(currentTime(), 100);
+setInterval(() => {
+  currentTime();
+}, 100);
+
 // Service Worker Installation
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("sw.js").then((reg) => {

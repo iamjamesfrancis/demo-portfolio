@@ -1,5 +1,5 @@
 const currentCacheName = "static-v4";
-// Last `v static-v3
+// Last `v static-v4
 self.addEventListener("install", (e) => {
   self.skipWaiting();
 

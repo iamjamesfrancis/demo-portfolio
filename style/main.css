@@ -416,6 +416,10 @@ body {
 }
 
 @media screen and (max-width: 920px) {
+  .time {
+    font-size: 1.5rem;
+    right: 0.5rem;
+  }
   .logo {
     height: 100px;
     width: 100px;
