@@ -1,6 +1,6 @@
 self.addEventListener("install", (e) => {
   e.waitUntil(
-    caches.open("static-v1").then((cache) => {
+    caches.open("static-v2").then((cache) => {
       cache.addAll([
         "./",
         "./style/main.css",
@@ -49,18 +49,18 @@ self.addEventListener("fetch", (e) => {
   );
 });
 
-// const expectedCaches = [];
+const expectedCaches = ["static-v1"];
 
-// self.addEventListener("activate", (e) => {
-//   e.waitUntil(
-//     caches.keys().then((cacheNames) => {
-//       return Promise.all(
-//         cacheNames.map((cacheName) => {
-//           if (!expectedCaches.includes(cacheName)) {
-//             return caches.delete(cacheName);
-//           }
-//         })
-//       );
-//     })
-//   );
-// });
+self.addEventListener("activate", (e) => {
+  e.waitUntil(
+    caches.keys().then((cacheNames) => {
+      return Promise.all(
+        cacheNames.map((cacheName) => {
+          if (!expectedCaches.includes(cacheName)) {
+            return caches.delete(cacheName);
+          }
+        })
+      );
+    })
+  );
+});
