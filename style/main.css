@@ -109,9 +109,11 @@ body {
 .firstpage .image {
   height: 300px;
   width: 300px;
-  pointer-events: none;
   background: transparent;
   border-radius: 50%;
+  border: 5px solid #553bf1;
+  -webkit-box-shadow: 0 0 30px 0 #553bf1, inset 0 0 30px 0 #553bf1;
+          box-shadow: 0 0 30px 0 #553bf1, inset 0 0 30px 0 #553bf1;
 }
 
 .firstpage .profile {
@@ -119,9 +121,6 @@ body {
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  border: 5px solid #553bf1;
-  -webkit-box-shadow: 0 0 30px 0 #553bf1, inset 0 0 30px 0 #553bf1;
-          box-shadow: 0 0 30px 0 #553bf1, inset 0 0 30px 0 #553bf1;
 }
 
 .work-section {

@@ -70,3 +70,22 @@ if ("serviceWorker" in navigator) {
     // reg.addEventListener("updatefound", () => {});
   });
 }
+
+//  Image Animations
+
+const img = document.querySelector(".image");
+const profile = document.querySelector(".profile");
+
+img.addEventListener("mousemove", (e) => {
+  // console.log(profile);
+  profile.style.transition = `none`;
+  let xAxis = (window.innerWidth / 2 - e.pageX) / 30;
+  profile.style.transform = `translateZ(150px)`;
+  let yAxis = (window.innerHeight / 2 - e.pageY) / 30;
+  profile.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+});
+
+img.addEventListener("mouseleave", () => {
+  profile.style.transition = `all .5s ease-in-out`;
+  profile.style.transform = `rotateY(0deg) rotateX(0deg)`;
+});

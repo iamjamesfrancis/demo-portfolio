@@ -1,5 +1,5 @@
-const currentCacheName = "static-v5";
-// Last `v static-v5
+const currentCacheName = "static-v6";
+// static-v6 - 05-06-2021
 self.addEventListener("install", (e) => {
   self.skipWaiting();
 
