@@ -111,6 +111,7 @@ body {
   width: 300px;
   background: transparent;
   border-radius: 50%;
+  border: 5px solid #553bf1;
   -webkit-box-shadow: 0 0 30px 0 #553bf1, inset 0 0 30px 0 #553bf1;
           box-shadow: 0 0 30px 0 #553bf1, inset 0 0 30px 0 #553bf1;
 }
@@ -469,7 +470,6 @@ body {
   }
   .firstpage .image .profile {
     padding: 0.3rem;
-    border: 5px solid #553bf1;
   }
   .secondpage .about {
     line-height: 2rem;
